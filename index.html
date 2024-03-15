@@ -1,0 +1,368 @@
+<!DOCTYPE html><html lang="pt-sBR"><head>
+  <script src="js/script.js" async="" data-tracking-id="DyJ2Dcchti" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery-3.6.4.min.js"></script>
+  <script src="js/js.cookie.min.js"></script>
+  </head><body><audio id="meuAudio"><source src="media/dinheiro.mp3" type="audio/mp3"></audio>
+
+  <title>Avaliador Premiado</title>
+  <script>
+
+   let prefix = ["checkout.perfectpay.com.br"];
+
+function getParams() {
+    let t = "",
+        e = window.top.location.href,
+        r = new URL(e);
+    if (null != r) {
+        let a = r.searchParams.get("utm_source"),
+            n = r.searchParams.get("utm_medium"),
+            o = r.searchParams.get("utm_campaign"),
+            m = r.searchParams.get("utm_term"),
+            c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&sck=${a}|${n}|${o}|${m}|${c}`), console.log(t)
+    }
+    return t
+}! function() {
+    var t = new URLSearchParams(window.location.search);
+    t.toString() && document.querySelectorAll("a").forEach(function(e) {
+        for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
+    })
+}();
+console.log('%cScript de rastreamento de vendas desenvolvido pela Comunidade NOD - Dericson Calari e Samuel Choairy', 'font-size:20px;color:yellow;');
+</script>
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  async
+  defer
+  
+></script>
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '771602757802719');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1073862310351372&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!--------------------- Página inicio --------------------->
+  
+  <div id="inicio" style="display: block;">
+
+        <div class="menu">
+          <a style="width: 30%; ">
+            <img src="images/premiado_logo_menu.png">
+          </a>
+          <div style="width: 45%;" class="buttons-container" href="#" onclick="mostrarPagina('saque')">
+            <div class="valor-box">
+              <span id="valor" style="font-family: 'Montserrat', sans-serif; max-width: 100%;">R$ 50.00</span>
+            </div>
+          </div>
+        </div>
+        <div style="margin-bottom: 100px;"></div>
+
+    <!---- Popup B0 ---->
+        
+    <div class="popup-container" id="popupB0" style="display: block;">
+        
+      <p class="texto-erro" style="font-size: 32px; color: #BA35FF; font-weight: bold; margin-top: 0px; margin-bottom: 0px;">Parabéns</p>
+
+      <p class="texto-erro">Você acaba de ganhar 1 licença gratuita para avaliar marcas em nosso app!</p>
+    
+      <p class="texto-erro" style="font-size: 22px; color: #BA35FF; font-weight: bold;">Aproveite, você já ganhou R$50!</p>
+
+      <p class="texto-erro">Faça 5 avaliações e realize seu primeiro saque!</p>
+
+      <button class="desbloquear-button" style="font-weight: bold; font-size: 26x; border-radius: 12px; margin-top: 15px;" onclick="showLoadingB0();">Começar</button>
+    </div>   
+          
+        
+    <!--------------------- Anuncio 1 --------------------->
+    
+    <div class="outer-box" id="ad1" style="display: block;">
+      <div class="white-box" onclick="showLoadingB1();" id="B1">
+         
+          
+          <div class="imagem">
+            <img src="images/iphone.png" style="width: 80%; margin: 0 auto; display: flex;">
+          </div>
+
+          <p class="pergunta-whats">O que você acha do iPhone 15 Pro Max?</p>
+
+          <div class="rating-container" id="rating-container-1"> 
+            <button style="background-color: #B91C1B" class="rating-button" data-rating="1">☹️</button>
+            <button style="background-color: #C2410B" class="rating-button" data-rating="2">😕</button>
+            <button style="background-color: #CA8A03" class="rating-button" data-rating="3">😐</button>
+            <button style="background-color: #65A30C" class="rating-button" data-rating="4">😀</button>
+            <button style="background-color: #0D9488" class="rating-button" data-rating="5">😍</button>
+          </div>
+
+               
+      </div>
+    </div>
+    
+    <!---- Popup B1 ---->
+        
+        <div class="popup-container" id="popupB1">
+        
+          <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+         <dotlottie-player src="https://lottie.host/7c063f68-5460-4704-bc8d-9a5fd9c04f97/MasdDJB4QX.json" background="transparent.html" speed="1" style="width: 200; height: 200px; display: flex; margin: 0 auto; margin-top: -20px; margin-bottom: -20px;" loop="" autoplay=""></dotlottie-player>
+          
+          <span class="popup-text" style="font-size: 20px;">Você recebeu:</span>
+          <span class="popup-text" style="font-size: 40px; font-weight: bold; font-family: 'Montserrat', sans-serif; margin-top: -10px; color: #25D366;">R$ 36,00</span>
+        
+        </div>
+        
+    
+    <!--------------------- Anuncio 2 --------------------->
+    
+    <div class="outer-box" id="ad2" style="display: none;">
+      <div class="white-box" onclick="showLoadingB2();" id="B2">
+              
+        <div class="imagem">
+          <img src="images/dobravel.jpg" style="width: 80%; margin: 0 auto; display: flex;">
+        </div>
+
+        <p class="pergunta-whats">O que você acha da tecnologia celular dobrável da Samsung?</p>
+
+        <div class="rating-container" id="rating-container-2">
+          <button style="background-color: #B91C1B" class="rating-button" data-rating="6">☹️</button>
+          <button style="background-color: #C2410B" class="rating-button" data-rating="7">😕</button>
+          <button style="background-color: #CA8A03" class="rating-button" data-rating="8">😐</button>
+          <button style="background-color: #65A30C" class="rating-button" data-rating="9">😀</button>
+          <button style="background-color: #0D9488" class="rating-button" data-rating="10">😍</button>
+        </div>
+
+              
+      </div>
+    </div>
+    
+    <!---- Popup B2 ---->
+        
+        <div class="popup-container" id="popupB2">
+        
+          <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+          <dotlottie-player src="https://lottie.host/7c063f68-5460-4704-bc8d-9a5fd9c04f97/MasdDJB4QX.json" background="transparent.html" speed="1" style="width: 200; height: 200px; display: flex; margin: 0 auto; margin-top: -20px; margin-bottom: -20px;" loop="" autoplay=""></dotlottie-player>
+           
+           <span class="popup-text" style="font-size: 20px;">Você recebeu:</span>
+           <span class="popup-text" style="font-size: 40px; font-weight: bold; font-family: 'Montserrat', sans-serif; margin-top: -10px; color: #25D366;">R$ 24,00</span>
+         
+
+        </div>
+    
+    
+    <!---------------------- Conteúdo do "p3" ---------------------->
+    
+      <div class="outer-box" id="ad3" style="display: none;">
+        <div class="white-box" onclick="showLoadingB3();" id="B3">
+            
+          <div class="imagem">
+            <img src="images/bmw.png" style="width: 75%; margin: 0 auto; display: flex; border-radius: 12px;">
+          </div>
+  
+          <p class="pergunta-whats">Qual nível de beleza você avaliaria para a nova BMW 320i 2024?</p>
+  
+          <div class="rating-container" id="rating-container-2">
+            <button style="background-color: #B91C1B" class="rating-button" data-rating="6">☹️</button>
+            <button style="background-color: #C2410B" class="rating-button" data-rating="7">😕</button>
+            <button style="background-color: #CA8A03" class="rating-button" data-rating="8">😐</button>
+            <button style="background-color: #65A30C" class="rating-button" data-rating="9">😀</button>
+            <button style="background-color: #0D9488" class="rating-button" data-rating="10">😍</button>
+          </div>
+            
+        </div>
+      </div>
+        
+        
+        <!---- Popup B3 ---->
+        
+        <div class="popup-container" id="popupB3">
+        
+            <div id="container-progresso" style="display: flex; margin: 0 auto; width: 300px; height: 300px;">
+              <svg viewBox="0 0 36 36" id="barra-progresso-svg">
+                  <circle cx="18" cy="18" r="16" fill="none" stroke="#ccc" stroke-width="3"></circle>
+                  <circle cx="18" cy="18" r="16" fill="none" stroke="#28a745" stroke-width="3" id="minha-barra-progresso" stroke-dasharray="0 1000"></circle>
+              </svg>
+          
+              <div id="texto-progresso">
+                  <span id="valor-saque" style="font-family: 'Montserrat', sans-serif; font-size: 23px;">R$150.00</span>
+                  <span style="font-family: 'Montserrat', sans-serif; color: #202020; font-size: 14px;">Seu saldo subiu!</span>
+              </div>
+          </div>
+          
+          
+    
+          <p style="font-family: 'Montserrat', sans-serif; font-size: 36px; color: #BA35FF; text-align: center; margin-top: 15px; margin-bottom: -5px; font-weight: bold;">Parabéns!</p>      
+    
+          <p class="popup-textL" style="margin-bottom: 20px; font-size: 18px; color: #636363">Você realizou suas 3 primeiras avaliações!</p>
+          
+        
+          <button class="desbloquear-button" style="font-weight: bold; font-size: 18x; border-radius: 12px; margin-top: 15px;" onclick="showSaque();">Sacar R$150,00</button>
+          
+        </div>
+    
+    
+    <!---------------------- Conteúdo do "p4" ---------------------->
+    
+    <div class="outer-box" id="ad4" style="display: none;">
+
+        <div class="white-box">
+
+          <div class="valor-box-saque">
+              <p style="font-size: 16px; margin-bottom: 15px; text-align: center; color: rgb(101, 101, 101);">Seu saldo</p>
+              <span id="valor-money" style="font-size: 45px; text-align: center; font-family: 'Montserrat', sans-serif; letter-spacing: -2px; color: #BA35FF;">R$ 150.00</span>
+          </div>
+
+      
+          <p style="margin-bottom: 18px; margin-top: 23px; color: rgb(101, 101, 101); text-align: center; font-weight: bold;">Selecione seu tipo de chave PIX</p>
+      
+          
+          <div class="button-container">
+            
+            <button class="square-button" onclick="toggleButton(1)">
+              <img decoding="async" src="images/cpf.png" alt="Botão 1">
+            </button>
+            
+            <button class="square-button" onclick="toggleButton(2)">
+              <img decoding="async" src="images/telefone.png" alt="Botão 2">
+            </button>
+            
+            <button class="square-button" onclick="toggleButton(3)">
+              <img decoding="async" src="images/email.png" alt="Botão 3">
+            </button>
+            
+            <button class="square-button" onclick="toggleButton(4)">
+              <img decoding="async" src="images/qr.png" alt="Botão 4">
+            </button>
+      
+          </div>
+
+          <div style="margin-bottom: 15px;"></div>
+
+          <input class="form-input" type="text" name="chave-pix" id="chave-pix" placeholder="Digite sua chave PIX aqui">
+
+          <input class="form-input" style="margin-top: 15px;" type="text" name="quantia" id="quantia" placeholder="Digite o valor que deseja sacar" inputmode="numeric" oninput="formatarValor(this)">
+    
+          <button class="desbloquear-button" id="B4" onclick="showLoadingB4();" style="font-weight: bold; font-size: 18x; border-radius: 12px; margin-top: 15px;">REALIZAR SAQUE</button>
+            
+        </div>
+      </div>
+        
+        <!---- Popup B4 ---->
+        
+        <div class="popup-container" id="popupB4" style="display: none;">
+        
+          <style>
+            .gif-container {
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+        </head>
+        <body>
+        
+        <div class="gif-container">
+            <div class="tenor-gif-embed" data-postid="15903843" data-share-method="host" data-aspect-ratio="1.02236" data-width="50%"><a href="https://tenor.com/view/check-mark-verified-correct-gif-15903843">Check Mark Verified GIF</a>from <a href="https://tenor.com/search/check+mark-gifs">Check Mark GIFs</a></div>
+        </div>
+        
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        
+        
+
+          <p> 
+
+          </p>
+
+          <p style="text-align: center; color: #2ff225; font-size: 36px; font-weight: bold; margin-top: -15px;">Sucesso</p>
+          
+          <p style="text-align: center; color: #19d119; font-size: 20px; font-weight: bold; margin-top: -15px">Seu pix foi agendado</p>
+         
+          <p class="texto-erro1"><span style="color: #5575FD">Agora só falta você realizar o seu cadastro no nosso sistema!</span></p>
+
+          <p class="texto-erro"><span style="color: #BA35FF">Para isso clique no botão abaixo e assista o video até o final para realizar o seu cadastro!</span></p>
+
+        <div class="checkout">
+
+          <a href="https://tarefas-digitais.site/ava-vsl/"><span style="color: #ffffff">CONCLUIR SAQUE</span></a>
+          
+        </div>
+        
+      
+          
+
+        </div>
+    
+
+    
+
+    <!--------------------- Limite atingido --------------------->
+    
+  
+    <div class="popup-containerL" id="popupL">
+
+      <div id="container-progresso" style="display: flex; margin: 0 auto; width: 300px; height: 300px;">
+          <svg viewBox="0 0 36 36" id="barra-progresso-svg">
+              <circle cx="18" cy="18" r="16" fill="none" stroke="#ccc" stroke-width="3"></circle>
+              <circle cx="18" cy="18" r="16" fill="none" stroke="#25D366" stroke-width="3" id="minha-barra-progresso" stroke-dasharray="0 1000"></circle>
+          </svg>
+      
+          <div id="texto-progresso">
+              <span id="valor-saque" style="font-family: 'Montserrat', sans-serif; font-size: 23px;">R$150.00</span>
+              <span style="font-family: 'Montserrat', sans-serif; color: #202020; font-size: 14px;">Seu saldo subiu!</span>
+          </div>
+      </div>
+      
+      
+
+      <p style="font-family: 'Montserrat', sans-serif; font-size: 32px; color: #28a745; text-align: center; margin-top: 15px; margin-bottom: -5px;">Parabéns!</p>      
+
+      <p class="popup-textL" style="margin-bottom: 20px; font-size: 18px; color: #636363">Você atingiu seu<br>limite diário!</p>
+      
+    
+      <button class="desbloquear-button" style="font-weight: bold; font-size: 18x; border-radius: 12px; margin-top: 15px;" href="#" onclick="mostrarPagina('saque')">SAQUE AGORA</button>
+      
+
+
+     
+    
+
+
+
+      
+      
+    </div>
+
+
+    
+
+  </div>
+
+
+
+
+    
+
+
+  
+  <!--------------------- Fim do body --------------------->
+  
+  <script src="js/scripts.js"></script>
+
+
+</body></html>
